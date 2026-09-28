@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginning CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Slade's Web Design Site</h1>
+        <p>Learn HTML and CSS</p>
+        
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
+    <main>
+        <h1>CSS</h1>
+        <p>CSS stands for "Cascading Style Sheets" which goes from HTML attributes to:
+        </p>
+        <h2>Inline CSS</h2>
+        <p style="color: blue;">Inline CSS is put straight into the html</p>
+        <h2>Embedded CSS</h2>
+        <style>
+            h2 {
+                font-size: 18px;
+                color: green;
+            }
+        </style>
+        <h2>embedded css comes from the style element within the html file still</h2>
+        <h2>External CSS</h2>
+        <link rel="stylesheet" href="mystyle.css">
+        <p class="external-style">This paragraph is styled with external CSS which comes from a different css file.</p>
+    </main>
+    <p>you should only use external CSS because helps organize code better and makes it easier to manage and maintain especially when working on large projects with other people.</p>
+    <h3>selectors are used to change the style of a specific paragraph.</h3>
+    <footer>
+        <p>&copy; 2026 Chris Slade</p>
+    </footer>
+</body>
+</html>
