@@ -1,0 +1,29 @@
+p {
+    color: blue;
+}
+header h1 {
+    font-size: xx-large;
+    font-weight: normal;
+    color: rgb(0, 183, 255);
+}
+
+main p {
+    color: rgb(42, 180, 37);
+}
+
+#maintitle {
+    color:blanchedalmond;
+}
+
+.orange {
+    color: orange;
+}
+
+.pink {
+    color: pink;
+}
+
+.bigger {
+    font-size: xx-large;
+    font-weight: normal;
+}
