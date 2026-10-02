@@ -1,0 +1,21 @@
+body {
+	font-family: Georgia, "Times New Roman", serif;
+	color: #2f3f58;
+	font-size: 25px;
+}
+
+#maintitle {
+    color:rgb(39, 7, 7);
+}
+
+.red {
+	color: #33112e;
+}
+
+.blue {
+	color: #667085;
+}
+
+.bgyellow {
+	background-color: #e4fca8;
+}
