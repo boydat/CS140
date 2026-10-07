@@ -1,0 +1,29 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url('bluebg.jpg') no-repeat blue;
+    color: white;
+}
+
+main {
+    background: url('redFlowerSmall.png') no-repeat center;
+}
+
+.surfspots {
+    list-style-image: url('dot.png');
+}
+
+.pipeline {
+    width: 250px;
+}
+
+.other {
+    background-image: url('bluebg.jpg');
+    background-color: blue;
+    background-repeat: repeat;
+}
+
+.moreother {
+    background-image: url('redflowerSmall.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
