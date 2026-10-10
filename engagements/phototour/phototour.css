@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('tile1.jpg') repeat center center fixed;
+    background-size: cover;
+    color: rgb(253, 253, 219);
+}
+
+nav a {
+    color: white;
+}
+
+.current {
+    color: rgb(158, 158, 158);
+}
+
+.customdot {
+    list-style-image: url('yellowarrow.png');
+}
+
+.deco {
+    background: url(flag.jpg) no-repeat right;
+}
