@@ -1,0 +1,29 @@
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    border: 1px solid #ccc;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+* { 
+    border-bottom: red solid 1px;
+}
+
+.p1 {
+    width: 300px;
+    font-size: 25px;
+    color: #006eff;
+    margin: 200px 300px 200px;
+    border: 5px dotted #f7b500;
+    padding: 50px;
+}
+
+.p2 {
+    width: 300px;
+    font-size: 25px;
+    color: #13c41c;
+    margin: 200px 50px 200px;
+    padding: 50px;
+    border: 5px dashed #f700d6;
+}
