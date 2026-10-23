@@ -16,17 +16,13 @@ nav{
     justify-content: space-evenly;
 }
 
-nav a,
-footer a {
-    display: block;
-}
-
 .mainnavcolor {
     background-color: #d8edf7;
 }
 
 .main-nav a {
     text-decoration: none;
+    display: block;
 }
 
 .box {
@@ -98,6 +94,10 @@ main .stepdad {
 .box3 {
     display: flex;
     flex-wrap: wrap;
+}
+
+footer {
+    display: block;
 }
 
 .wrapper {
