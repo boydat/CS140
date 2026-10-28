@@ -26,6 +26,7 @@ nav a {
     display: block;
     color: white;
     padding: 10px;
+    border-radius: 10px;
 }
 
 main {
@@ -69,6 +70,34 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+@media ONLY screen AND (max-width: 680px) {
+    .mainrow {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    nav{
+        overflow: scroll;
+    }
+
+    nav a {
+        border-bottom: thin 10px;
+    }
 }
 
 @media print {
