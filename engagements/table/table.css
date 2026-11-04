@@ -1,0 +1,46 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tablediv {
+    overflow-x: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#schedule {
+    /*border: 0px solid #000000;*/
+    border-collapse: collapse;
+    border-spacing: 100px;
+
+}
+
+#schedule th, #schedule td {
+    border: 0px solid #000000;
+}
+
+#schedule th {
+    background-color: rgb(100, 173, 106);
+    color: white;
+}
+
+#schedule td {
+    vertical-align: middle;
+}
+
+caption {
+  caption-side: bottom;
+}
+
+#schedule tfoot {
+    background-color: #f4f4f7;
+}
+
+#schedule tr:nth-child(even) {
+    background-color: #ffa2a2;
+}
+
+#schedule td:last-child {
+    background-color: #4b6bd4;
+}
+
