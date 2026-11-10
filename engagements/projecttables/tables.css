@@ -57,12 +57,12 @@ nav a {
 }
 
 #content {
-    border-collapse: collapse;
-    border-spacing: 10px;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
 }
 
 #content th, #content td {
-    border: 1px solid #000000;
+    border: 1px solid #cacaca;
 }
 
 #content th {

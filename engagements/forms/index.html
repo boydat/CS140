@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Forms</h2>
+        <p>the action attribute is for the url the form will take you to once form is submitted</p>
+        <p>get will send form data into the url as a query string while post sends it a different way. if changing or adding something on server use post.</p>
+        <p>preset is the actual data put into form while placeholder disappears and is not submitted. text box: use type="text" as seen below for name, email and password. text area: use textarea tag for longer messages. select box: use select tag and option tag for dropdown menus. for checkboxes and radio buttons, use type="checkbox" and type="radio".</p>
+        <p>type="email" is a HTMl5 form control. the browser will show and validate the email. The mobile keyboard will be email friendly. List of HTML5 form controls:</p>
+        <ul>
+            <li>input type="color"</li>
+            <li>input type="date"</li>
+            <li>input type="datetime-local"</li>
+            <li>input type="email"</li>
+            <li>input type="month"</li>
+            <li>input type="number"</li>
+            <li>input type="range"</li>
+            <li>input type="search"</li>
+            <li>input type="tel"</li>
+            <li>input type="time"</li>
+            <li>input type="url"</li>
+            <li>input type="week"</li>
+            <li>datalist</li>
+            <li>output</li>
+            <li>progress</li>
+            <li>meter</li>
+        </ul>
+        <p>the form controls i used are email.</p>
+        <form action="formprocessing.html" method="get">
+            <div class="form-row">
+                <label for="personname">Name:</label>
+                <input type="text" id="personname" name="fullname" placeholder="Full Name">
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-row">
+                <label for="state">State:</label>
+                <select id="state" name="state">
+                    <option value="">------</option>
+                    <option value="AK">Alaska</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                    <option value="TX">Texas</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="aboutperson">About You:</label>
+                <textarea id="aboutperson" name="aboutperson" placeholder="Tell us about yourself"></textarea>
+            </div>
+            <div class="form-row">
+                <label>Gender:</label>
+                <input type="radio" id="radio1" name="radio" value="Male">
+                <label for="radio1">Male</label>
+                <input type="radio" id="radio2" name="radio" value="Female">
+                <label for="radio2">Female</label>
+            </div>
+            <div class="form-row">
+                <label for="robotcheck">Are you a human?</label>
+                <input type="checkbox" id="robotcheck" name="robotcheck" value="Yes">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Boydat</p>
+    </footer>
+</body>
+</html>
