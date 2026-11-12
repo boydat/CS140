@@ -1,3 +1,69 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+fieldset {
+    background-color: #f9f9f9;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #be7951;
+}
+
+.form-row input, .form-row select, .form-row textarea {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+}
+
+.form-row input[type="submit"] {
+    width: auto;
+    background-color: #be7951;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.form-row, .check-row {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    outline: none;
+    border-color: #8173fd;
+    background-color: #f1c4aa;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .check-row label {
+        text-align: left;
+    }
+
+    .spacer {
+        display: none;
+    }
+}

@@ -43,10 +43,8 @@
         </ul>
         <p>the form controls i used are email.</p>
         <form action="formprocessing.html" method="get">
-            <div class="form-row">
-                <label for="personname">Name:</label>
-                <input type="text" id="personname" name="fullname" placeholder="Full Name">
-            </div>
+            <fieldset>
+                <legend>Account</legend>
             <div class="form-row">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Email Address">
@@ -55,33 +53,52 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Password">
             </div>
-            <div class="form-row">
-                <label for="state">State:</label>
-                <select id="state" name="state">
-                    <option value="">------</option>
-                    <option value="AK">Alaska</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="UT">Utah</option>
-                    <option value="TX">Texas</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <label for="aboutperson">About You:</label>
-                <textarea id="aboutperson" name="aboutperson" placeholder="Tell us about yourself"></textarea>
-            </div>
-            <div class="form-row">
-                <label>Gender:</label>
-                <input type="radio" id="radio1" name="radio" value="Male">
-                <label for="radio1">Male</label>
-                <input type="radio" id="radio2" name="radio" value="Female">
-                <label for="radio2">Female</label>
-            </div>
-            <div class="form-row">
-                <label for="robotcheck">Are you a human?</label>
-                <input type="checkbox" id="robotcheck" name="robotcheck" value="Yes">
-            </div>
-            <input type="submit" value="Submit">
+            </fieldset>
+            <fieldset>
+                <legend>About You</legend>
+                <div class="form-row">
+                    <label for="personname">Name:</label>
+                    <input type="text" id="personname" name="fullname" placeholder="Full Name">
+                </div>
+                <div class="form-row">
+                    <label for="age">Date of Birth:</label>
+                    <input type="date" id="age" name="age">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select id="state" name="state">
+                        <option value="">------</option>
+                        <option value="AK">Alaska</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                        <option value="TX">Texas</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label for="robotcheck">Remember Me?</label>
+                    <input type="checkbox" value="Yes" id="robotcheck" name="robotcheck" >
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <input type="radio" id="radio1" name="radio" value="Male">
+                        <label for="radio1">Male</label>
+                        <input type="radio" id="radio2" name="radio" value="Female">
+                        <label for="radio2">Female</label>
+                    </fieldset>
+                </div>
+                <div class="form-row">
+                    <label for="aboutperson">Comments:</label>
+                    <textarea id="aboutperson" name="aboutperson"></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </fieldset>
         </form>
+        <p>style form using CSS with colors, borders spacing, alignments and picking specific parts to style using focus and classes.</p>
+       <p>use flex to line up labels and inputs</p>
+       <p>readable, easy to tap on buttons, adjusts for screen size</p>
     </main>
     <footer>
         <p>&copy; 2026 Boydat</p>
