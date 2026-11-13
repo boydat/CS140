@@ -2,6 +2,20 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+header {
+    background-color: #be7951;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #be7951;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
 fieldset {
     background-color: #f9f9f9;
     border: 1px solid #c0c0c0;
@@ -38,6 +52,22 @@ legend {
     gap: 10px;
 }
 
+.check-row fieldset {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+.check-row label {
+    text-align: left;
+    width: auto;
+    margin-right: 10px;
+}
+
 .form-row label {
     width: 150px;
     text-align: right;
@@ -47,6 +77,18 @@ form input:focus, form select:focus, form textarea:focus {
     outline: none;
     border-color: #8173fd;
     background-color: #f1c4aa;
+}
+
+input[type="submit"] {
+    background-color: #a66c3e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #be7951;
 }
 
 .spacer {
@@ -65,5 +107,11 @@ form input:focus, form select:focus, form textarea:focus {
 
     .spacer {
         display: none;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
     }
 }
