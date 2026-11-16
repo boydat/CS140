@@ -19,10 +19,6 @@
     </nav>
     <main>
         <h2>Forms</h2>
-        <p>the action attribute is for the url the form will take you to once form is submitted</p>
-        <p>get will send form data into the url as a query string while post sends it a different way. if changing or adding something on server use post.</p>
-        <p>preset is the actual data put into form while placeholder disappears and is not submitted. text box: use type="text" as seen below for name, email and password. text area: use textarea tag for longer messages. select box: use select tag and option tag for dropdown menus. for checkboxes and radio buttons, use type="checkbox" and type="radio".</p>
-        <p>type="email" is a HTMl5 form control. the browser will show and validate the email. The mobile keyboard will be email friendly. List of HTML5 form controls:</p>
         <ul>
             <li>input type="color"</li>
             <li>input type="date"</li>
@@ -42,7 +38,7 @@
             <li>meter</li>
         </ul>
         <p>the form controls i used are email.</p>
-        <form action="formprocessing.html" method="get">
+        <form action="formprocessing.html" method="get" id="signupform">
             <fieldset>
                 <legend>Account</legend>
             <div class="form-row">
@@ -96,12 +92,69 @@
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
+        <h3>nov 9</h3>
+        <p>the action attribute is for the url the form will take you to once form is submitted</p>
+        <p>get will send form data into the url as a query string while post sends it a different way. if changing or adding something on server use post.</p>
+        <p>preset is the actual data put into form while placeholder disappears and is not submitted. text box: use type="text" as seen below for name, email and password. text area: use textarea tag for longer messages. select box: use select tag and option tag for dropdown menus. for checkboxes and radio buttons, use type="checkbox" and type="radio".</p>
+        <p>type="email" is a HTMl5 form control. the browser will show and validate the email. The mobile keyboard will be email friendly. List of HTML5 form controls:</p>
+        <h3>nov 11</h3>
         <p>style form using CSS with colors, borders spacing, alignments and picking specific parts to style using focus and classes.</p>
        <p>use flex to line up labels and inputs</p>
        <p>readable, easy to tap on buttons, adjusts for screen size</p>
+       <h3>nov 16</h3>
+       <p>programming langurage thats lets you make a website interactive and was named to boost popularity after java.</p>
+       <p>javascript runs in a webbrowser or in node.js</p>
+       <p>jquery is a library for javascript that made the editing of a html in a webbrowser easier.</p>
+       <p>React by Meta is most popular today.</p>
+       <p>use event.preventDefault() in event to stop default submission.</p>
     </main>
     <footer>
         <p>&copy; 2026 Boydat</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("#signupform");
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                const fullname = document.getElementById("personname").value;
+                const age = document.getElementById("age").value;
+                const state = document.getElementById("state").value;
+                const robotcheck = document.getElementById("robotcheck").checked;
+                const gender = document.querySelector('input[name="radio"]:checked') ? document.querySelector('input[name="radio"]:checked').value : '';
+                const aboutperson = document.getElementById("aboutperson").value;
+                
+                if (!email || !password || !fullname || !age || !state || !gender) {
+                    alert("Please fill in all required fields.");
+                    return;
+                }
+
+                if (!fullname || !email) {
+                    alert("You need an email and name.");
+                    return;
+                }
+
+                if (!age || age<=18) {
+                    alert("You must be 18 or older to sign up.");
+                    return;
+                }
+
+                const formdata = {
+                    name: fullname,
+                    email: email,
+                    password: password,
+                    age: age,
+                    state: state,
+                    robotcheck: robotcheck,
+                    gender: gender,
+                    aboutperson: aboutperson
+                };
+
+                console.log(formdata);
+            });
+        });
+    </script>
 </body>
 </html>
