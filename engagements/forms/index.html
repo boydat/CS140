@@ -92,6 +92,7 @@
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
+        <p id="message"></p>
         <h3>nov 9</h3>
         <p>the action attribute is for the url the form will take you to once form is submitted</p>
         <p>get will send form data into the url as a query string while post sends it a different way. if changing or adding something on server use post.</p>
@@ -107,54 +108,15 @@
        <p>jquery is a library for javascript that made the editing of a html in a webbrowser easier.</p>
        <p>React by Meta is most popular today.</p>
        <p>use event.preventDefault() in event to stop default submission.</p>
+       <h3>nov 18</h3>
+       <p>ajax is used to make real time updates to a webpage without reloading the entire page.</p>
+       <p>keeps html clean and easy to adjust and fix any bugs and the javascript can be used by any html file.</p>
+       <p>right click on page then click inspect then click console. messages from the page should show there.</p>
+       <p>yes they are same. no errors.</p>
     </main>
     <footer>
         <p>&copy; 2026 Boydat</p>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const form = document.querySelector("#signupform");
-            form.addEventListener("submit", function(event) {
-                event.preventDefault();
-
-                const email = document.getElementById("email").value;
-                const password = document.getElementById("password").value;
-                const fullname = document.getElementById("personname").value;
-                const age = document.getElementById("age").value;
-                const state = document.getElementById("state").value;
-                const robotcheck = document.getElementById("robotcheck").checked;
-                const gender = document.querySelector('input[name="radio"]:checked') ? document.querySelector('input[name="radio"]:checked').value : '';
-                const aboutperson = document.getElementById("aboutperson").value;
-                
-                if (!email || !password || !fullname || !age || !state || !gender) {
-                    alert("Please fill in all required fields.");
-                    return;
-                }
-
-                if (!fullname || !email) {
-                    alert("You need an email and name.");
-                    return;
-                }
-
-                if (!age || age<=18) {
-                    alert("You must be 18 or older to sign up.");
-                    return;
-                }
-
-                const formdata = {
-                    name: fullname,
-                    email: email,
-                    password: password,
-                    age: age,
-                    state: state,
-                    robotcheck: robotcheck,
-                    gender: gender,
-                    aboutperson: aboutperson
-                };
-
-                console.log(formdata);
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
