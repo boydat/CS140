@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         console.log("Collected Form Data:", formdata);
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "submit.json", true);
+        xhr.open("GET", "./submit.json", true);
 
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4) {
